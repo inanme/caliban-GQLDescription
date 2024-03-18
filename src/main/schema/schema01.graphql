@@ -1,0 +1,10 @@
+enum MyEnum {
+    """comment for ENUM1"""
+    ENUM1
+    """comment for ENUM2"""
+    ENUM2
+}
+
+type Query {
+    enum2String(select: MyEnum!): String!
+}
